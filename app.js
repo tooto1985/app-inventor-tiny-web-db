@@ -33,6 +33,10 @@ app.post('/getvalue', function(req, res) {
   res.json(['VALUE', req.body.tag, store[req.body.tag]]);
 });
 
+app.get('/listvalue', function(req, res) {
+  res.json(store);
+});
+
 
 
 
